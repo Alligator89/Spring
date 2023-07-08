@@ -1,13 +1,17 @@
 package springhomework;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Person {
     private String name;
     private int age;
     private String surname;
     private String gender;
+
+    public Person(String name, int age, String surname, String gender) {
+        this.name = name;
+        this.age = age;
+        this.surname = surname;
+        this.gender = gender;
+    }
 
     public String getName() {
         return name;

@@ -6,7 +6,11 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-
-    <context:component-scan base-package="springhomework"/>
-
+    <bean id="person"
+          class="springhomework.Person">
+            <constructor-arg name="name" value="Dima"/>
+        <constructor-arg name="age" value="45"/>
+        <constructor-arg name="surname" value="Petrov"/>
+        <constructor-arg name="gender" value="male"/>
+    </bean>
 </beans>
